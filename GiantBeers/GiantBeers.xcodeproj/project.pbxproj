@@ -94,6 +94,9 @@
 		062FFF8F2B31A55300414D6F /* GiantBeers */ = {
 			isa = PBXGroup;
 			children = (
+				062FFFBC2B31A72A00414D6F /* network */,
+				062FFFBB2B31A71F00414D6F /* model */,
+				062FFFBA2B31A71A00414D6F /* view */,
 				062FFF902B31A55300414D6F /* GiantBeersApp.swift */,
 				062FFF922B31A55300414D6F /* ContentView.swift */,
 				062FFF942B31A55400414D6F /* Assets.xcassets */,
@@ -125,6 +128,27 @@
 				062FFFAD2B31A55400414D6F /* GiantBeersUITestsLaunchTests.swift */,
 			);
 			path = GiantBeersUITests;
+			sourceTree = "<group>";
+		};
+		062FFFBA2B31A71A00414D6F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		062FFFBB2B31A71F00414D6F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		062FFFBC2B31A72A00414D6F /* network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
