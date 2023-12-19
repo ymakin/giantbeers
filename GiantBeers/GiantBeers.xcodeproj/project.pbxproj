@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		062FFF912B31A55300414D6F /* GiantBeersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFF902B31A55300414D6F /* GiantBeersApp.swift */; };
-		062FFF932B31A55300414D6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFF922B31A55300414D6F /* ContentView.swift */; };
 		062FFF952B31A55400414D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062FFF942B31A55400414D6F /* Assets.xcassets */; };
 		062FFF982B31A55400414D6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062FFF972B31A55400414D6F /* Preview Assets.xcassets */; };
 		062FFFA22B31A55400414D6F /* GiantBeersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFA12B31A55400414D6F /* GiantBeersTests.swift */; };
 		062FFFAC2B31A55400414D6F /* GiantBeersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFAB2B31A55400414D6F /* GiantBeersUITests.swift */; };
 		062FFFAE2B31A55400414D6F /* GiantBeersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFAD2B31A55400414D6F /* GiantBeersUITestsLaunchTests.swift */; };
+		062FFFC02B31A78000414D6F /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFBF2B31A78000414D6F /* TabBarView.swift */; };
+		062FFFC22B31A7A900414D6F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFC12B31A7A900414D6F /* HomeView.swift */; };
+		062FFFC42B31AE8200414D6F /* BeerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFC32B31AE8200414D6F /* BeerListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		062FFF8D2B31A55300414D6F /* GiantBeers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiantBeers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062FFF902B31A55300414D6F /* GiantBeersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiantBeersApp.swift; sourceTree = "<group>"; };
-		062FFF922B31A55300414D6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		062FFF942B31A55400414D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062FFF972B31A55400414D6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		062FFF9D2B31A55400414D6F /* GiantBeersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiantBeersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,9 @@
 		062FFFA72B31A55400414D6F /* GiantBeersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiantBeersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		062FFFAB2B31A55400414D6F /* GiantBeersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiantBeersUITests.swift; sourceTree = "<group>"; };
 		062FFFAD2B31A55400414D6F /* GiantBeersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiantBeersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		062FFFBF2B31A78000414D6F /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		062FFFC12B31A7A900414D6F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		062FFFC32B31AE8200414D6F /* BeerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,6 @@
 				062FFFBB2B31A71F00414D6F /* model */,
 				062FFFBA2B31A71A00414D6F /* view */,
 				062FFF902B31A55300414D6F /* GiantBeersApp.swift */,
-				062FFF922B31A55300414D6F /* ContentView.swift */,
 				062FFF942B31A55400414D6F /* Assets.xcassets */,
 				062FFF962B31A55400414D6F /* Preview Content */,
 			);
@@ -133,6 +136,9 @@
 		062FFFBA2B31A71A00414D6F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				062FFFBF2B31A78000414D6F /* TabBarView.swift */,
+				062FFFC12B31A7A900414D6F /* HomeView.swift */,
+				062FFFC32B31AE8200414D6F /* BeerListView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -281,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				062FFF932B31A55300414D6F /* ContentView.swift in Sources */,
+				062FFFC22B31A7A900414D6F /* HomeView.swift in Sources */,
+				062FFFC02B31A78000414D6F /* TabBarView.swift in Sources */,
+				062FFFC42B31AE8200414D6F /* BeerListView.swift in Sources */,
 				062FFF912B31A55300414D6F /* GiantBeersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
