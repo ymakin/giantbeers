@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		062FFF912B31A55300414D6F /* GiantBeersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFF902B31A55300414D6F /* GiantBeersApp.swift */; };
+		062FFF932B31A55300414D6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFF922B31A55300414D6F /* ContentView.swift */; };
+		062FFF952B31A55400414D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062FFF942B31A55400414D6F /* Assets.xcassets */; };
+		062FFF982B31A55400414D6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062FFF972B31A55400414D6F /* Preview Assets.xcassets */; };
+		062FFFA22B31A55400414D6F /* GiantBeersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFA12B31A55400414D6F /* GiantBeersTests.swift */; };
+		062FFFAC2B31A55400414D6F /* GiantBeersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFAB2B31A55400414D6F /* GiantBeersUITests.swift */; };
+		062FFFAE2B31A55400414D6F /* GiantBeersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFAD2B31A55400414D6F /* GiantBeersUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		062FFF9E2B31A55400414D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 062FFF852B31A55300414D6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 062FFF8C2B31A55300414D6F;
+			remoteInfo = GiantBeers;
+		};
+		062FFFA82B31A55400414D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 062FFF852B31A55300414D6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 062FFF8C2B31A55300414D6F;
+			remoteInfo = GiantBeers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		062FFF8D2B31A55300414D6F /* GiantBeers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiantBeers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		062FFF902B31A55300414D6F /* GiantBeersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiantBeersApp.swift; sourceTree = "<group>"; };
+		062FFF922B31A55300414D6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		062FFF942B31A55400414D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		062FFF972B31A55400414D6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		062FFF9D2B31A55400414D6F /* GiantBeersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiantBeersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		062FFFA12B31A55400414D6F /* GiantBeersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiantBeersTests.swift; sourceTree = "<group>"; };
+		062FFFA72B31A55400414D6F /* GiantBeersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiantBeersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		062FFFAB2B31A55400414D6F /* GiantBeersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiantBeersUITests.swift; sourceTree = "<group>"; };
+		062FFFAD2B31A55400414D6F /* GiantBeersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiantBeersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		062FFF8A2B31A55300414D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		062FFF9A2B31A55400414D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		062FFFA42B31A55400414D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		062FFF842B31A55300414D6F = {
+			isa = PBXGroup;
+			children = (
+				062FFF8F2B31A55300414D6F /* GiantBeers */,
+				062FFFA02B31A55400414D6F /* GiantBeersTests */,
+				062FFFAA2B31A55400414D6F /* GiantBeersUITests */,
+				062FFF8E2B31A55300414D6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		062FFF8E2B31A55300414D6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				062FFF8D2B31A55300414D6F /* GiantBeers.app */,
+				062FFF9D2B31A55400414D6F /* GiantBeersTests.xctest */,
+				062FFFA72B31A55400414D6F /* GiantBeersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		062FFF8F2B31A55300414D6F /* GiantBeers */ = {
+			isa = PBXGroup;
+			children = (
+				062FFF902B31A55300414D6F /* GiantBeersApp.swift */,
+				062FFF922B31A55300414D6F /* ContentView.swift */,
+				062FFF942B31A55400414D6F /* Assets.xcassets */,
+				062FFF962B31A55400414D6F /* Preview Content */,
+			);
+			path = GiantBeers;
+			sourceTree = "<group>";
+		};
+		062FFF962B31A55400414D6F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				062FFF972B31A55400414D6F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		062FFFA02B31A55400414D6F /* GiantBeersTests */ = {
+			isa = PBXGroup;
+			children = (
+				062FFFA12B31A55400414D6F /* GiantBeersTests.swift */,
+			);
+			path = GiantBeersTests;
+			sourceTree = "<group>";
+		};
+		062FFFAA2B31A55400414D6F /* GiantBeersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				062FFFAB2B31A55400414D6F /* GiantBeersUITests.swift */,
+				062FFFAD2B31A55400414D6F /* GiantBeersUITestsLaunchTests.swift */,
+			);
+			path = GiantBeersUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		062FFF8C2B31A55300414D6F /* GiantBeers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 062FFFB12B31A55400414D6F /* Build configuration list for PBXNativeTarget "GiantBeers" */;
+			buildPhases = (
+				062FFF892B31A55300414D6F /* Sources */,
+				062FFF8A2B31A55300414D6F /* Frameworks */,
+				062FFF8B2B31A55300414D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiantBeers;
+			productName = GiantBeers;
+			productReference = 062FFF8D2B31A55300414D6F /* GiantBeers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		062FFF9C2B31A55400414D6F /* GiantBeersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 062FFFB42B31A55400414D6F /* Build configuration list for PBXNativeTarget "GiantBeersTests" */;
+			buildPhases = (
+				062FFF992B31A55400414D6F /* Sources */,
+				062FFF9A2B31A55400414D6F /* Frameworks */,
+				062FFF9B2B31A55400414D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				062FFF9F2B31A55400414D6F /* PBXTargetDependency */,
+			);
+			name = GiantBeersTests;
+			productName = GiantBeersTests;
+			productReference = 062FFF9D2B31A55400414D6F /* GiantBeersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		062FFFA62B31A55400414D6F /* GiantBeersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 062FFFB72B31A55400414D6F /* Build configuration list for PBXNativeTarget "GiantBeersUITests" */;
+			buildPhases = (
+				062FFFA32B31A55400414D6F /* Sources */,
+				062FFFA42B31A55400414D6F /* Frameworks */,
+				062FFFA52B31A55400414D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				062FFFA92B31A55400414D6F /* PBXTargetDependency */,
+			);
+			name = GiantBeersUITests;
+			productName = GiantBeersUITests;
+			productReference = 062FFFA72B31A55400414D6F /* GiantBeersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		062FFF852B31A55300414D6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					062FFF8C2B31A55300414D6F = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					062FFF9C2B31A55400414D6F = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 062FFF8C2B31A55300414D6F;
+					};
+					062FFFA62B31A55400414D6F = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 062FFF8C2B31A55300414D6F;
+					};
+				};
+			};
+			buildConfigurationList = 062FFF882B31A55300414D6F /* Build configuration list for PBXProject "GiantBeers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 062FFF842B31A55300414D6F;
+			productRefGroup = 062FFF8E2B31A55300414D6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				062FFF8C2B31A55300414D6F /* GiantBeers */,
+				062FFF9C2B31A55400414D6F /* GiantBeersTests */,
+				062FFFA62B31A55400414D6F /* GiantBeersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		062FFF8B2B31A55300414D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062FFF982B31A55400414D6F /* Preview Assets.xcassets in Resources */,
+				062FFF952B31A55400414D6F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		062FFF9B2B31A55400414D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		062FFFA52B31A55400414D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		062FFF892B31A55300414D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062FFF932B31A55300414D6F /* ContentView.swift in Sources */,
+				062FFF912B31A55300414D6F /* GiantBeersApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		062FFF992B31A55400414D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062FFFA22B31A55400414D6F /* GiantBeersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		062FFFA32B31A55400414D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062FFFAE2B31A55400414D6F /* GiantBeersUITestsLaunchTests.swift in Sources */,
+				062FFFAC2B31A55400414D6F /* GiantBeersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		062FFF9F2B31A55400414D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 062FFF8C2B31A55300414D6F /* GiantBeers */;
+			targetProxy = 062FFF9E2B31A55400414D6F /* PBXContainerItemProxy */;
+		};
+		062FFFA92B31A55400414D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 062FFF8C2B31A55300414D6F /* GiantBeers */;
+			targetProxy = 062FFFA82B31A55400414D6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		062FFFAF2B31A55400414D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		062FFFB02B31A55400414D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		062FFFB22B31A55400414D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GiantBeers/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levrge.de.GiantBeers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		062FFFB32B31A55400414D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GiantBeers/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levrge.de.GiantBeers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		062FFFB52B31A55400414D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levrge.de.GiantBeersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiantBeers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GiantBeers";
+			};
+			name = Debug;
+		};
+		062FFFB62B31A55400414D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levrge.de.GiantBeersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiantBeers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GiantBeers";
+			};
+			name = Release;
+		};
+		062FFFB82B31A55400414D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levrge.de.GiantBeersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GiantBeers;
+			};
+			name = Debug;
+		};
+		062FFFB92B31A55400414D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levrge.de.GiantBeersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GiantBeers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		062FFF882B31A55300414D6F /* Build configuration list for PBXProject "GiantBeers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				062FFFAF2B31A55400414D6F /* Debug */,
+				062FFFB02B31A55400414D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		062FFFB12B31A55400414D6F /* Build configuration list for PBXNativeTarget "GiantBeers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				062FFFB22B31A55400414D6F /* Debug */,
+				062FFFB32B31A55400414D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		062FFFB42B31A55400414D6F /* Build configuration list for PBXNativeTarget "GiantBeersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				062FFFB52B31A55400414D6F /* Debug */,
+				062FFFB62B31A55400414D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		062FFFB72B31A55400414D6F /* Build configuration list for PBXNativeTarget "GiantBeersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				062FFFB82B31A55400414D6F /* Debug */,
+				062FFFB92B31A55400414D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 062FFF852B31A55300414D6F /* Project object */;
+}
