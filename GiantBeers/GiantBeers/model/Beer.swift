@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Beer: Decodable, Hashable {
+struct Beer: Decodable, Hashable, Identifiable {
     let id: Int
     let name: String
     let tagline: String
@@ -15,13 +15,13 @@ struct Beer: Decodable, Hashable {
     let description: String
     let imageUrl: URL
     let abv: Float
-    let ibu: Float? = nil
-    let target_fg: Int
-    let target_og: Int
-    let ebc: Int? = nil
-    let srm: Int? = nil
-    let ph: Float? = nil
-    let attenuation_level: Int
+    let ibu: Float?
+    let target_fg: Float
+    let target_og: Float
+    let ebc: Int?
+    let srm: Float?
+    let ph: Float?
+    let attenuation_level: Float
     let volume: Quantity
     let boilVolume: Quantity
     let method: Method
@@ -29,6 +29,52 @@ struct Beer: Decodable, Hashable {
     let foodPairing: [String]
     let brewersTips: String
     let contributedBy: String
+    
+    init(
+        id: Int,
+        name: String,
+        tagline: String,
+        firstBrewed: String,
+        description: String,
+        imageUrl: URL, 
+        abv: Float,
+        ibu: Float? = nil,
+        target_fg: Float,
+        target_og: Float,
+        ebc: Int? = nil,
+        srm: Float? = nil,
+        ph: Float? = nil,
+        attenuation_level: Float,
+        volume: Quantity,
+        boilVolume: Quantity,
+        method: Method,
+        ingredients: Ingredients,
+        foodPairing: [String],
+        brewersTips: String,
+        contributedBy: String
+    ) {
+        self.id = id
+        self.name = name
+        self.tagline = tagline
+        self.firstBrewed = firstBrewed
+        self.description = description
+        self.imageUrl = imageUrl
+        self.abv = abv
+        self.ibu = ibu
+        self.target_fg = target_fg
+        self.target_og = target_og
+        self.ebc = ebc
+        self.srm = srm
+        self.ph = ph
+        self.attenuation_level = attenuation_level
+        self.volume = volume
+        self.boilVolume = boilVolume
+        self.method = method
+        self.ingredients = ingredients
+        self.foodPairing = foodPairing
+        self.brewersTips = brewersTips
+        self.contributedBy = contributedBy
+    }
     
     private enum CodingKeys: String, CodingKey {
         case id
@@ -38,8 +84,12 @@ struct Beer: Decodable, Hashable {
         case description
         case imageUrl = "image_url"
         case abv
+        case ibu
         case target_fg
         case target_og
+        case ebc
+        case srm
+        case ph
         case attenuation_level
         case volume
         case boilVolume = "boil_volume"
