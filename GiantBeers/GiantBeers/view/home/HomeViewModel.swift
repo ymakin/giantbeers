@@ -12,6 +12,7 @@ class HomeViewModel: ObservableObject {
     @Published var beers: [Beer] = [Beer]()
     @Published var error: NetworkErrorType? = nil
     @Published var searchText: String = ""
+    @Published var state: ViewState = .loading
     
     var searchedBeer: [Beer] {
         guard !searchText.isEmpty else {
@@ -24,16 +25,18 @@ class HomeViewModel: ObservableObject {
         self.beerUseCase = beerUseCase
     }
     
-    func loadBeers() {
-        Task {
-            let result = await beerUseCase.beersRequest(_with: RequestParameter())
-            switch(result) {
-            case .success(let loadedBeers):
-                await MainActor.run {
-                    beers = loadedBeers
-                }
-            case .error(let loadedError):
-                await MainActor.run { error = loadedError }
+    func loadBeers() async {
+        let result = await beerUseCase.beersRequest(with: RequestParameter())
+        switch(result) {
+        case .success(let loadedBeers):
+            await MainActor.run {
+                beers = loadedBeers
+                state = .success
+            }
+        case .error(let loadedError):
+            await MainActor.run {
+                error = loadedError
+                state = .error
             }
         }
     }

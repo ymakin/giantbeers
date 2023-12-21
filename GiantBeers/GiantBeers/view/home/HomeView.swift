@@ -10,7 +10,6 @@ import SwiftUI
 struct HomeView: View {
     private enum Route: Hashable {
         case detail(_ beer: Beer)
-        case filter
     }
     
     @ObservedObject var viewModel: HomeViewModel
@@ -18,19 +17,39 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack(path: $path) {
+            switch viewModel.state {
+            case .loading:
+                ProgressView()
+                    .frame(width: 50, height: 50)
+            case .success:
+                listView
+            case .error:
+                errorView
+            }
+        }
+        .task {
+            loadBeers()
+        }
+    }
+    
+    @ViewBuilder
+    private var listView: some View {
+        if viewModel.searchedBeer.isEmpty {
+            VStack {
+                Text("Die Liste der Biersorten ist leer.")
+                    .padding(50)
+            }
+        } else {
             List {
                 ForEach(viewModel.searchedBeer) { beer in
-                    BeerItemView(name: beer.name, tagline: beer.tagline, url: beer.imageUrl)
+                    BeerItemView(beer: beer)
                         .onTapGesture {
                             path.append(Route.detail(beer))
                         }
                 }
             }
             .refreshable {
-                viewModel.loadBeers()
-            }
-            .task {
-                viewModel.loadBeers()
+                loadBeers()
             }
             .navigationTitle("GiantBeer")
             .navigationBarTitleDisplayMode(.inline)
@@ -38,11 +57,30 @@ struct HomeView: View {
                 switch route {
                 case .detail(let beer):
                     BeerDetailView(beer: beer)
-                case .filter:
-                    Text("")
                 }
             }
             .searchable(text: $viewModel.searchText)
+        }
+    }
+    
+    @ViewBuilder
+    private var errorView: some View {
+        Text("Es ist ein Fehler passiert und die App konnte keine Biersorten laden.")
+            .padding(50)
+        Button {
+            loadBeers()
+        } label: {
+            Text("Erneut versuchen")
+                .padding(10)
+        }
+        .background(AppColor.primaryColor)
+        .foregroundColor(Color.white)
+        .cornerRadius(10)
+    }
+    
+    func loadBeers() {
+        Task {
+            await viewModel.loadBeers()
         }
     }
 }

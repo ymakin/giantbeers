@@ -20,11 +20,6 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Favoriten", systemImage: "heart")
                 }
-            
-            SettingsView()
-                .tabItem {
-                    Label("Einstellungen", systemImage: "gearshape")
-                }
         }
     }
 }

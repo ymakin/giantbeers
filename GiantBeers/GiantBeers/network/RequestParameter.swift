@@ -54,7 +54,7 @@ class RequestParameter {
         self.ids = ids
     }
     
-    func addParams(_with url: URL) -> URL? {
+    func addParams(with url: URL) -> URL? {
         let urlQueryItems = [
             abvGreaterThen.urlQueryItem(name: "abv_gt"),
             abvLessThen.urlQueryItem(name: "abv_lt"),
@@ -64,18 +64,12 @@ class RequestParameter {
             ebcLessThen.urlQueryItem(name: "ebc_lt"),
             beerName.urlQueryItem(name: "beer_name"),
             yeast.urlQueryItem(name: "yeast"),
-//            URLQueryItem(name: "beer_name", value: beerName),
-//            URLQueryItem(name: "yeast", value: yeast),
             brewedBefore.urlQueryItem(name: "brewed_before"),
             brewedAfter.urlQueryItem(name: "brewed_after"),
             hops.urlQueryItem(name: "hops"),
             malt.urlQueryItem(name: "malt"),
             food.urlQueryItem(name: "food"),
             ids.urlQueryItem(name: "ids")
-//            URLQueryItem(name: "hops", value: hops),
-//            URLQueryItem(name: "malt", value: malt),
-//            URLQueryItem(name: "food", value: food),
-//            URLQueryItem(name: "ids", value: ids)
         ].compactMap { $0 }
         
         guard var urlComponents = URLComponents(string: url.absoluteString) else {
@@ -96,33 +90,5 @@ class RequestParameter {
             }
         }
         self.ids = combinedIds
-    }
-}
-
-extension Optional where Wrapped == Float {
-    func urlQueryItem(name: String) -> URLQueryItem? {
-        if let value = self {
-            return URLQueryItem(name: name, value: String(value))
-        }
-        return nil
-    }
-}
-
-extension Optional where Wrapped == String {
-    func urlQueryItem(name: String) -> URLQueryItem? {
-        if let value = self {
-            return URLQueryItem(name: name, value: value)
-        }
-        return nil
-    }
-}
-
-extension Optional where Wrapped == Date {
-    func urlQueryItem(name: String) -> URLQueryItem? {
-        if let value = self {
-            let formattedDate = CustomDateFormatter.dateFormatter.string(from: value)
-            return URLQueryItem(name: name, value: formattedDate)
-        }
-        return nil
     }
 }

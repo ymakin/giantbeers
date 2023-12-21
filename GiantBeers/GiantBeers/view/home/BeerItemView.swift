@@ -14,9 +14,7 @@ struct BeerItemView: View {
         case error
     }
 
-    let name: String
-    let tagline: String
-    let url: URL
+    let beer: Beer
     @State var imageState: ImageState = .loading
     private let width = 50.0
     private let height = 50.0
@@ -46,9 +44,9 @@ struct BeerItemView: View {
             }
             
             VStack(alignment: .leading) {
-                Text(name).font(Font.system(size: 17.0))
+                Text(beer.name).font(Font.system(size: 17.0))
                     .multilineTextAlignment(.leading)
-                Text(tagline).font(Font.system(size: 14.0))
+                Text(beer.tagline).font(Font.system(size: 14.0))
                     .multilineTextAlignment(.leading)
             }
         }
@@ -57,8 +55,8 @@ struct BeerItemView: View {
         }
     }
     
-    func loadImage() async {
-        if let image = await ImageLoader().loadImage(from: url) {
+    private func loadImage() async {
+        if let image = await ImageLoader().loadImage(from: beer.imageUrl) {
             imageState = .success(image)
             return
         }
@@ -67,15 +65,6 @@ struct BeerItemView: View {
 }
 
 #Preview {
-    BeerItemView(name: "Beer 1", tagline: "A Real Bitter Experience.", url: URL(string: "")!)
+    BeerItemView(beer: Beer.mock)
 }
 
-extension View {
-    @ViewBuilder func isHidden(_ isHidden: Bool) -> some View {
-        if isHidden {
-            self.hidden()
-        } else {
-            self
-        }
-    }
-}

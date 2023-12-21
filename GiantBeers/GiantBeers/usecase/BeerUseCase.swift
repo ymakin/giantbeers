@@ -9,14 +9,8 @@ import Foundation
 
 struct BeerUseCase {
     let network: NetworkProtocol
-    
-    var version: String {
-        "V2"
-    }
-    
-    var themePath: String {
-        "beers"
-    }
+    private let version = "V2"
+    private let themePath = "beers"
     
     var url: URL {
         let baseUrl = URL(string: NetworkEnvironment.develop)!
@@ -29,19 +23,8 @@ struct BeerUseCase {
         self.network = network
     }
     
-    func detailBeerRequest(_with id: String) -> ResultType<Beer> {
-        let urlWithId = url.appendingPathComponent(id)
-        
-        Task {
-            let result: ResultType<Beer> = await network.request(url: urlWithId)
-            return result
-        }
-        
-        return .error(type: .undefined)
-    }
-    
-    func beersRequest(_with requestParameter: RequestParameter) async -> ResultType<[Beer]> {
-        let urlWithParameter = requestParameter.addParams(_with: url)!
+    func beersRequest(with requestParameter: RequestParameter) async -> ResultType<[Beer]> {
+        let urlWithParameter = requestParameter.addParams(with: url)!
         let result: ResultType<[Beer]> = await network.request(url: urlWithParameter)
         return result
     }

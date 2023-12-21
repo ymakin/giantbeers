@@ -14,6 +14,7 @@ class FavouriteViewModel: ObservableObject {
     @Published var beers: [Beer] = [Beer]()
     @Published var error: NetworkErrorType? = nil
     @Published var searchText: String = ""
+    @Published var state: ViewState = .loading
     
     var searchedBeer: [Beer] {
         guard !searchText.isEmpty else {
@@ -27,22 +28,24 @@ class FavouriteViewModel: ObservableObject {
         self.favouriteManager = favouriteManager
     }
     
-    func loadBeers() {
+    func loadBeers() async {
         let loadedFavouriteIds = favouriteManager.load()
         guard !loadedFavouriteIds.isEmpty else { return }
         
-        Task {
-            let requestParameter = RequestParameter()
-            requestParameter.setIds(ids: loadedFavouriteIds)
-            
-            let result = await beerUseCase.beersRequest(_with: requestParameter)
-            switch(result) {
-            case .success(let loadedBeers):
-                await MainActor.run {
-                    beers = loadedBeers
-                }
-            case .error(let loadedError):
-                await MainActor.run { error = loadedError }
+        let requestParameter = RequestParameter()
+        requestParameter.setIds(ids: loadedFavouriteIds)
+        
+        let result = await beerUseCase.beersRequest(with: requestParameter)
+        switch(result) {
+        case .success(let loadedBeers):
+            await MainActor.run {
+                beers = loadedBeers
+                state = .success
+            }
+        case .error(let loadedError):
+            await MainActor.run {
+                error = loadedError
+                state = .error
             }
         }
     }
