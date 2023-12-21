@@ -23,6 +23,7 @@
 		062FFFCE2B31BC8E00414D6F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFCD2B31BC8E00414D6F /* Network.swift */; };
 		062FFFD02B31BCBC00414D6F /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFCF2B31BCBC00414D6F /* NetworkEnvironment.swift */; };
 		062FFFD22B31EBDA00414D6F /* NetworkErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFD12B31EBDA00414D6F /* NetworkErrorType.swift */; };
+		062FFFD62B31EEB400414D6F /* BeerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFD52B31EEB400414D6F /* BeerUseCase.swift */; };
 		062FFFD82B31F1DF00414D6F /* RequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFD72B31F1DF00414D6F /* RequestParameter.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		062FFFCD2B31BC8E00414D6F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		062FFFCF2B31BCBC00414D6F /* NetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
 		062FFFD12B31EBDA00414D6F /* NetworkErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorType.swift; sourceTree = "<group>"; };
+		062FFFD52B31EEB400414D6F /* BeerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerUseCase.swift; sourceTree = "<group>"; };
 		062FFFD72B31F1DF00414D6F /* RequestParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParameter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 		062FFF8F2B31A55300414D6F /* GiantBeers */ = {
 			isa = PBXGroup;
 			children = (
+				062FFFD32B31EE9C00414D6F /* usecase */,
 				062FFFBC2B31A72A00414D6F /* network */,
 				062FFFBB2B31A71F00414D6F /* model */,
 				062FFFBA2B31A71A00414D6F /* view */,
@@ -179,6 +182,14 @@
 				062FFFD72B31F1DF00414D6F /* RequestParameter.swift */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		062FFFD32B31EE9C00414D6F /* usecase */ = {
+			isa = PBXGroup;
+			children = (
+				062FFFD52B31EEB400414D6F /* BeerUseCase.swift */,
+			);
+			path = usecase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +334,7 @@
 				062FFFCA2B31B44700414D6F /* Method.swift in Sources */,
 				062FFFD02B31BCBC00414D6F /* NetworkEnvironment.swift in Sources */,
 				062FFF912B31A55300414D6F /* GiantBeersApp.swift in Sources */,
+				062FFFD62B31EEB400414D6F /* BeerUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
