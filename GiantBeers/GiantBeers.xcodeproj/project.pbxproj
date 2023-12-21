@@ -26,6 +26,7 @@
 		062FFFD62B31EEB400414D6F /* BeerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFD52B31EEB400414D6F /* BeerUseCase.swift */; };
 		062FFFD82B31F1DF00414D6F /* RequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFD72B31F1DF00414D6F /* RequestParameter.swift */; };
 		0671F80F2B33038700F4AC58 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F80E2B33038700F4AC58 /* CustomDateFormatter.swift */; };
+		0671F8142B33441300F4AC58 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F8132B33441300F4AC58 /* ImageLoader.swift */; };
 		0671F8162B33504E00F4AC58 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F8152B33504E00F4AC58 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		062FFFD52B31EEB400414D6F /* BeerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerUseCase.swift; sourceTree = "<group>"; };
 		062FFFD72B31F1DF00414D6F /* RequestParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParameter.swift; sourceTree = "<group>"; };
 		0671F80E2B33038700F4AC58 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
+		0671F8132B33441300F4AC58 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		0671F8152B33504E00F4AC58 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,8 @@
 		062FFF8F2B31A55300414D6F /* GiantBeers */ = {
 			isa = PBXGroup;
 			children = (
+				0671F8122B33440600F4AC58 /* service */,
+				0671F80D2B33037B00F4AC58 /* utils */,
 				062FFFD32B31EE9C00414D6F /* usecase */,
 				062FFFBC2B31A72A00414D6F /* network */,
 				062FFFBB2B31A71F00414D6F /* model */,
@@ -203,6 +207,14 @@
 				0671F8152B33504E00F4AC58 /* AppColor.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		0671F8122B33440600F4AC58 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				0671F8132B33441300F4AC58 /* ImageLoader.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +355,7 @@
 				062FFFC62B31B22F00414D6F /* Beer.swift in Sources */,
 				062FFFC82B31B2F700414D6F /* Quantity.swift in Sources */,
 				062FFFC42B31AE8200414D6F /* BeerListView.swift in Sources */,
+				0671F8142B33441300F4AC58 /* ImageLoader.swift in Sources */,
 				062FFFCE2B31BC8E00414D6F /* Network.swift in Sources */,
 				062FFFD22B31EBDA00414D6F /* NetworkErrorType.swift in Sources */,
 				062FFFCA2B31B44700414D6F /* Method.swift in Sources */,
