@@ -15,6 +15,7 @@ enum NetworkErrorType: Error {
     case client
     case sessionInvalid
     case undefined
+    case notValidUrl
     
     static func type(with errorCode: Int) -> Self {
         switch errorCode {

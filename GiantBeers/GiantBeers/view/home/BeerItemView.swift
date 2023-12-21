@@ -65,6 +65,6 @@ struct BeerItemView: View {
 }
 
 #Preview {
-    BeerItemView(beer: Beer.mock)
+    BeerItemView(beer: Beer.mock1)
 }
 

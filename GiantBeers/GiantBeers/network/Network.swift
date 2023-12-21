@@ -21,7 +21,6 @@ enum HTTPMethod: String {
 }
 
 protocol NetworkProtocol {
-    
     func request<T: Decodable>(url: URL) async -> ResultType<T>
 }
 

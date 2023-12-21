@@ -155,5 +155,5 @@ struct BeerDetailView: View {
 }
 
 #Preview {
-    BeerDetailView(beer: Beer.mock)
+    BeerDetailView(beer: Beer.mock1)
 }

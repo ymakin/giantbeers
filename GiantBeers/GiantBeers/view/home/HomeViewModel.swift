@@ -8,7 +8,7 @@
 import Foundation
 
 class HomeViewModel: ObservableObject {
-    let beerUseCase: BeerUseCase
+    let beerUseCase: BeerUseCaseProtocol
     @Published var beers: [Beer] = [Beer]()
     @Published var error: NetworkErrorType? = nil
     @Published var searchText: String = ""
@@ -21,7 +21,7 @@ class HomeViewModel: ObservableObject {
         return beers.filter { $0.name.contains(searchText)}
     }
     
-    init(beerUseCase: BeerUseCase = BeerUseCase()) {
+    init(beerUseCase: BeerUseCaseProtocol = BeerUseCase()) {
         self.beerUseCase = beerUseCase
     }
     

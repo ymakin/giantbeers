@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct BeerUseCase {
+protocol BeerUseCaseProtocol {
+    func beersRequest(with requestParameter: RequestParameter) async -> ResultType<[Beer]>
+}
+
+struct BeerUseCase: BeerUseCaseProtocol {
     let network: NetworkProtocol
     private let version = "V2"
     private let themePath = "beers"
@@ -24,7 +28,10 @@ struct BeerUseCase {
     }
     
     func beersRequest(with requestParameter: RequestParameter) async -> ResultType<[Beer]> {
-        let urlWithParameter = requestParameter.addParams(with: url)!
+        guard let urlWithParameter = requestParameter.addParams(with: url) else {
+            return .error(type: .notValidUrl)
+        }
+        
         let result: ResultType<[Beer]> = await network.request(url: urlWithParameter)
         return result
     }
