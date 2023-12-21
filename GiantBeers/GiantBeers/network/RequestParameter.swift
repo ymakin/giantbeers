@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RequestParameter {
+class RequestParameter {
     var abvGreaterThen: Float?
     var abvLessThen: Float?
     var ibuGreaterThen: Float?
@@ -19,9 +19,9 @@ struct RequestParameter {
     var brewedBefore: Date?
     var brewedAfter: Date?
     var hops: String?
-    let malt: String?
-    let food: String?
-    let ids: String?
+    var malt: String?
+    var food: String?
+    var ids: String?
     
     init(abvGreaterThen: Float? = nil,
          abvLessThen: Float? = nil,
@@ -62,14 +62,20 @@ struct RequestParameter {
             ibuLessThen.urlQueryItem(name: "ibu_lt"),
             ebcGreaterThen.urlQueryItem(name: "ebc_gt"),
             ebcLessThen.urlQueryItem(name: "ebc_lt"),
-            URLQueryItem(name: "beer_name", value: beerName),
-            URLQueryItem(name: "yeast", value: yeast),
+            beerName.urlQueryItem(name: "beer_name"),
+            yeast.urlQueryItem(name: "yeast"),
+//            URLQueryItem(name: "beer_name", value: beerName),
+//            URLQueryItem(name: "yeast", value: yeast),
             brewedBefore.urlQueryItem(name: "brewed_before"),
             brewedAfter.urlQueryItem(name: "brewed_after"),
-            URLQueryItem(name: "hops", value: hops),
-            URLQueryItem(name: "malt", value: malt),
-            URLQueryItem(name: "food", value: food),
-            URLQueryItem(name: "ids", value: ids)
+            hops.urlQueryItem(name: "hops"),
+            malt.urlQueryItem(name: "malt"),
+            food.urlQueryItem(name: "food"),
+            ids.urlQueryItem(name: "ids")
+//            URLQueryItem(name: "hops", value: hops),
+//            URLQueryItem(name: "malt", value: malt),
+//            URLQueryItem(name: "food", value: food),
+//            URLQueryItem(name: "ids", value: ids)
         ].compactMap { $0 }
         
         guard var urlComponents = URLComponents(string: url.absoluteString) else {
@@ -79,12 +85,33 @@ struct RequestParameter {
         urlComponents.queryItems = urlQueryItems
         return urlComponents.url
     }
+    
+    func setIds(ids: [Int]) {
+        guard !ids.isEmpty else { return }
+        var combinedIds = ""
+        for (index, id) in ids.enumerated() {
+            combinedIds += String(id)
+            if index != ids.count - 1 {
+                combinedIds += "|"
+            }
+        }
+        self.ids = combinedIds
+    }
 }
 
 extension Optional where Wrapped == Float {
     func urlQueryItem(name: String) -> URLQueryItem? {
         if let value = self {
             return URLQueryItem(name: name, value: String(value))
+        }
+        return nil
+    }
+}
+
+extension Optional where Wrapped == String {
+    func urlQueryItem(name: String) -> URLQueryItem? {
+        if let value = self {
+            return URLQueryItem(name: name, value: value)
         }
         return nil
     }

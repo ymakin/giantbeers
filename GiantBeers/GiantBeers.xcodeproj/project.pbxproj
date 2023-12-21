@@ -31,6 +31,7 @@
 		0671F8162B33504E00F4AC58 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F8152B33504E00F4AC58 /* AppColor.swift */; };
 		0671F8182B33594400F4AC58 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F8172B33594400F4AC58 /* FavouriteView.swift */; };
 		0671F81A2B33595E00F4AC58 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F8192B33595E00F4AC58 /* SettingsView.swift */; };
+		069DD9042B34874900F87C64 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069DD9032B34874900F87C64 /* FavouriteViewModel.swift */; };
 		069DD9062B34893E00F87C64 /* FavouriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069DD9052B34893E00F87C64 /* FavouriteManager.swift */; };
 		06E5FCBD2B339DFB00D833B9 /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E5FCBC2B339DFB00D833B9 /* BeerDetailView.swift */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		0671F8152B33504E00F4AC58 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		0671F8172B33594400F4AC58 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		0671F8192B33595E00F4AC58 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		069DD9032B34874900F87C64 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
 		069DD9052B34893E00F87C64 /* FavouriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteManager.swift; sourceTree = "<group>"; };
 		06E5FCBC2B339DFB00D833B9 /* BeerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,10 +175,10 @@
 		062FFFBA2B31A71A00414D6F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				069DD9072B34909300F87C64 /* favourite */,
 				069DD9022B3472AE00F87C64 /* detail */,
 				069DD9012B34717C00F87C64 /* home */,
 				062FFFBF2B31A78000414D6F /* TabBarView.swift */,
-				0671F8172B33594400F4AC58 /* FavouriteView.swift */,
 				0671F8192B33595E00F4AC58 /* SettingsView.swift */,
 			);
 			path = view;
@@ -246,6 +248,15 @@
 				06E5FCBC2B339DFB00D833B9 /* BeerDetailView.swift */,
 			);
 			path = detail;
+			sourceTree = "<group>";
+		};
+		069DD9072B34909300F87C64 /* favourite */ = {
+			isa = PBXGroup;
+			children = (
+				0671F8172B33594400F4AC58 /* FavouriteView.swift */,
+				069DD9032B34874900F87C64 /* FavouriteViewModel.swift */,
+			);
+			path = favourite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +397,7 @@
 				062FFFC62B31B22F00414D6F /* Beer.swift in Sources */,
 				062FFFC82B31B2F700414D6F /* Quantity.swift in Sources */,
 				0671F8142B33441300F4AC58 /* ImageLoader.swift in Sources */,
+				069DD9042B34874900F87C64 /* FavouriteViewModel.swift in Sources */,
 				062FFFCE2B31BC8E00414D6F /* Network.swift in Sources */,
 				062FFFD22B31EBDA00414D6F /* NetworkErrorType.swift in Sources */,
 				069DD9062B34893E00F87C64 /* FavouriteManager.swift in Sources */,

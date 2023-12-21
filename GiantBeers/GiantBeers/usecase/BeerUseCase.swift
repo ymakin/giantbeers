@@ -41,7 +41,8 @@ struct BeerUseCase {
     }
     
     func beersRequest(_with requestParameter: RequestParameter) async -> ResultType<[Beer]> {
-        let result: ResultType<[Beer]> = await network.request(url: url)
+        let urlWithParameter = requestParameter.addParams(_with: url)!
+        let result: ResultType<[Beer]> = await network.request(url: urlWithParameter)
         return result
     }
 }
