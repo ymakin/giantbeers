@@ -6,24 +6,30 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct TabBarView: View {
     var body: some View {
         TabView {
-            HomeView()
-                .tabItem {
-                    Label("Home", systemImage: "waterbottle")
-                }
-            
-            HomeView()
-                .tabItem {
-                    Label("Favoriten", systemImage: "heart")
-                }
-            
-            HomeView()
-                .tabItem {
-                    Label("Einstellungen", systemImage: "gearshape")
-                }
+            Group {
+                HomeView(viewModel: HomeViewModel())
+                    .tabItem {
+                        Label("Home", systemImage: "waterbottle")
+                            .foregroundColor(.white)
+                    }
+                    
+                
+                FavouriteView()
+                    .tabItem {
+                        Label("Favoriten", systemImage: "heart")
+                            .foregroundColor(.white)
+                    }
+                
+                SettingsView()
+                    .tabItem {
+                        Label("Einstellungen", systemImage: "gearshape")
+                    }
+            }
         }
     }
 }
