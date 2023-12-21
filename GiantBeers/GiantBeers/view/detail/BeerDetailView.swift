@@ -9,10 +9,14 @@ import SwiftUI
 
 struct BeerDetailView: View {
     let beer: Beer
+    let favouriteManager: FavouriteManager
     
-    init(beer: Beer) {
+    init(beer: Beer, favouriteManager: FavouriteManager = FavouriteManager()) {
         self.beer = beer
+        self.favouriteManager = favouriteManager
     }
+    
+    @State var isFavourite: Bool = false
     
     var body: some View {
         GeometryReader { geo in
@@ -88,6 +92,22 @@ struct BeerDetailView: View {
                 }
             }
             .navigationTitle(beer.name)
+            .toolbar {
+                Button {
+                    isFavourite
+                    ? favouriteManager.remove(id: beer.id)
+                    : favouriteManager.add(id: beer.id)
+                    
+                    isFavourite.toggle()
+                } label: {
+                    Image(systemName: isFavourite ? "heart.fill" : "heart")
+                        .resizable()
+                        .scaledToFit()
+                }
+            }
+            .onAppear() {
+                isFavourite = favouriteManager.isFavourite(id: beer.id)
+            }
         }
     }
     

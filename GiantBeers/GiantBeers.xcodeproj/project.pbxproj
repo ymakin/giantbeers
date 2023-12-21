@@ -31,6 +31,7 @@
 		0671F8162B33504E00F4AC58 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F8152B33504E00F4AC58 /* AppColor.swift */; };
 		0671F8182B33594400F4AC58 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F8172B33594400F4AC58 /* FavouriteView.swift */; };
 		0671F81A2B33595E00F4AC58 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F8192B33595E00F4AC58 /* SettingsView.swift */; };
+		069DD9062B34893E00F87C64 /* FavouriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069DD9052B34893E00F87C64 /* FavouriteManager.swift */; };
 		06E5FCBD2B339DFB00D833B9 /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E5FCBC2B339DFB00D833B9 /* BeerDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		0671F8152B33504E00F4AC58 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		0671F8172B33594400F4AC58 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		0671F8192B33595E00F4AC58 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		069DD9052B34893E00F87C64 /* FavouriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteManager.swift; sourceTree = "<group>"; };
 		06E5FCBC2B339DFB00D833B9 /* BeerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				0671F8132B33441300F4AC58 /* ImageLoader.swift */,
+				069DD9052B34893E00F87C64 /* FavouriteManager.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				0671F8142B33441300F4AC58 /* ImageLoader.swift in Sources */,
 				062FFFCE2B31BC8E00414D6F /* Network.swift in Sources */,
 				062FFFD22B31EBDA00414D6F /* NetworkErrorType.swift in Sources */,
+				069DD9062B34893E00F87C64 /* FavouriteManager.swift in Sources */,
 				062FFFC42B31AE8200414D6F /* BeerItemView.swift in Sources */,
 				062FFFCA2B31B44700414D6F /* Method.swift in Sources */,
 				0671F80F2B33038700F4AC58 /* CustomDateFormatter.swift in Sources */,
