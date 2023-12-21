@@ -25,6 +25,8 @@
 		062FFFD22B31EBDA00414D6F /* NetworkErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFD12B31EBDA00414D6F /* NetworkErrorType.swift */; };
 		062FFFD62B31EEB400414D6F /* BeerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFD52B31EEB400414D6F /* BeerUseCase.swift */; };
 		062FFFD82B31F1DF00414D6F /* RequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062FFFD72B31F1DF00414D6F /* RequestParameter.swift */; };
+		0671F80F2B33038700F4AC58 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F80E2B33038700F4AC58 /* CustomDateFormatter.swift */; };
+		0671F8162B33504E00F4AC58 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671F8152B33504E00F4AC58 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		062FFFD12B31EBDA00414D6F /* NetworkErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorType.swift; sourceTree = "<group>"; };
 		062FFFD52B31EEB400414D6F /* BeerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerUseCase.swift; sourceTree = "<group>"; };
 		062FFFD72B31F1DF00414D6F /* RequestParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParameter.swift; sourceTree = "<group>"; };
+		0671F80E2B33038700F4AC58 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
+		0671F8152B33504E00F4AC58 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,15 @@
 				062FFFD52B31EEB400414D6F /* BeerUseCase.swift */,
 			);
 			path = usecase;
+			sourceTree = "<group>";
+		};
+		0671F80D2B33037B00F4AC58 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				0671F80E2B33038700F4AC58 /* CustomDateFormatter.swift */,
+				0671F8152B33504E00F4AC58 /* AppColor.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,12 +339,14 @@
 				062FFFCC2B31B64500414D6F /* Ingredients.swift in Sources */,
 				062FFFC22B31A7A900414D6F /* HomeView.swift in Sources */,
 				062FFFC02B31A78000414D6F /* TabBarView.swift in Sources */,
+				0671F8162B33504E00F4AC58 /* AppColor.swift in Sources */,
 				062FFFC62B31B22F00414D6F /* Beer.swift in Sources */,
 				062FFFC82B31B2F700414D6F /* Quantity.swift in Sources */,
 				062FFFC42B31AE8200414D6F /* BeerListView.swift in Sources */,
 				062FFFCE2B31BC8E00414D6F /* Network.swift in Sources */,
 				062FFFD22B31EBDA00414D6F /* NetworkErrorType.swift in Sources */,
 				062FFFCA2B31B44700414D6F /* Method.swift in Sources */,
+				0671F80F2B33038700F4AC58 /* CustomDateFormatter.swift in Sources */,
 				062FFFD02B31BCBC00414D6F /* NetworkEnvironment.swift in Sources */,
 				062FFF912B31A55300414D6F /* GiantBeersApp.swift in Sources */,
 				062FFFD62B31EEB400414D6F /* BeerUseCase.swift in Sources */,
